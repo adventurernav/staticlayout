@@ -70,7 +70,10 @@ a{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
     /* column-gap: 1rem; */
-    border: .5px gray solid;
+    border: .3px gray solid;
+    border-left: none;
+    border-right: none;
+    /* width: 100%; */
 }
 .nav-grid > * {
     background-color: black;
@@ -111,7 +114,11 @@ a{
     float: right;
   }
   
-  
+  #bad-batch {
+    background-image: url(https://lumiere-a.akamaihd.net/v1/images/series-announce-20200713-hero-desktop_644897d3.jpeg?region=0,0,2048,870&width=1200);
+    background-size: cover;
+    height: 100%;
+  }
   
   
   /* Move slides overflowed container */
@@ -235,17 +242,38 @@ a{
     display: none;
 }
 #search{
-    height: 2.5em;
-    width: 60%;
-    background-color: rgb(70, 70, 70);
-    margin-top: 1rem;
-    border-radius: .5rem;
-    margin-right: 0;
+    height: 100%;
+    width: 80%;
+    margin-left: 0rem;
+    text-align: left;
+    background-color: rgb(50, 50, 50);
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
 }
-#search > input{
+#search-icon{
+  display: inline-block;
+  width: 10%;
+  
+}
+/* #search > input{
     height:100%;
-    width: fit-content;
-    background-color: rgb(70, 70, 70);
+    width: 89%;
+    background-color: rgb(50, 50, 50);
+    margin-left: 0;
+    padding-left: .5rem;
+    border-radius: .3rem;
+} */
+
+#search-div{
+  height: 2.5em;
+    width: 60%;
+    background-color: rgb(50, 50, 50);
+    margin-top: 1rem;
+    border-radius: .3rem;
+    margin-right: 0;
+    display: inline-block;
 }
 #mandopic{
     margin-top: 2rem;
