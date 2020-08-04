@@ -1,0 +1,28 @@
+body{
+    background-image: url("https://lumiere-a.akamaihd.net/v1/images/background-stars-desktop_81342104.jpeg?region=0%2C0%2C2048%2C1153");
+    height: 200vh;
+}
+.header-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 18.5vh;
+}
+#header{
+    background-image: url("https://static-mh.content.disney.io/starwars/assets/navigation/navigation_stars-c6452e016c73.jpg");
+}
+.grid-item-1{
+    grid-column: 1 / 2;
+}
+.grid-item-2{
+    grid-column: 2 / 3;
+    text-align: center;
+    
+}
+.grid-item-3{
+    grid-column: 3 / 4;
+}
+#logo{
+    height: 79%;
+    margin-top: 1rem;
+    /* padding-bottom: 0; */
+}
