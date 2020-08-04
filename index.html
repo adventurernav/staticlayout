@@ -1,18 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StarWars.com | The Official Star Wars Website</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.14.0-web/css/all.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="https://lumiere-a.akamaihd.net/v1/images/sw-favicon-2018-v1-b-400x400_ba2ac2bc.png?region=0%2C0%2C400%2C400" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="https://lumiere-a.akamaihd.net/v1/images/sw-favicon-2018-v1-b-400x400_ba2ac2bc.png?region=0%2C0%2C400%2C400"
+        type="image/x-icon">
 </head>
+
 <body>
-    <div id="header" class="header-grid">
-        <div class="grid-item-1">social icons</div>
-        <div class="grid-item-2"><img id="logo" src="https://static-mh.content.disney.io/starwars/assets/navigation/sw_logo_stacked-336c62367939.png" alt=""></div>
-        <div class="grid-item-3">search etc</div>
+    <div id="fixed">
+        <div id="header" class="header-grid">
+            <div class="grid-item-1">
+                <i class="fab fa-facebook fa-xs"></i>
+                <i class="fab fa-instagram fa-xs"></i>
+                <i class="fab fa-tumblr fa-xs"></i>
+                <i class="fab fa-twitter fa-xs"></i>
+                <i class="fab fa-youtube fa-xs"></i>
+                |
+                <i class="kids"></i>
+            </div>
+            <div class="grid-item-2">
+                <img id="logo"
+                    src="https://static-mh.content.disney.io/starwars/assets/navigation/sw_logo_stacked-336c62367939.png"
+                    alt="">
+            </div>
+            <div class="grid-item-3">
+                <!-- <input type="image" src="./fontawesome-free-5.14.0-web/svgs/solid/search.svg" alt="Search"> -->
+
+
+                <!-- <div id="search" class="search"> -->
+                    <input id="search" type="search" name="" placeholder="Search Star Wars">
+                    <!-- <span class="fa fa-search"></span> -->
+                <!-- </div> -->
+                <!-- <input placeholder="Search term"> -->
+                <br>
+                <a href="">LOG IN</a> //
+                <a href="">
+                    SIGN UP
+
+                </a>
+            </div>
+        </div>
+        <div class="nav-grid">
+            <span></span>
+            <span><a href="">NEWS + BLOG</a></span>
+            <span><a href="">VIDEO</a></span>
+            <span><a href="">FILMS</a></span>
+            <span><a href="">SERIES</a></span>
+            <span><a href="">INTERACTIVE</a></span>
+            <span><a href="">COMMUNITY</a></span>
+            <span><a href="">DATABANK</a></span>
+            <span></span>
+        </div>
     </div>
-    <hr>
+    <!-- CAROUSEL -->
+    <div id="homepage-slider" class="st-slider">
+        <a class="streaming">STAR WARS STREAMING ANYTIME ON <i>DISNEY LOGO</i></a>
+
+        <input type="radio" class="cs_anchor radio" name="slider" id="slide1" />
+        <input type="radio" class="cs_anchor radio" name="slider" id="slide2" />
+        <input type="radio" class="cs_anchor radio" name="slider" id="slide3" />
+        <input type="radio" class="cs_anchor radio" name="slider" id="play1" checked="" />
+
+        <div class="images">
+            <div class="images-inner">
+                <div class="image-slide">
+                    <div class="image bg-yellow"><img src="./assets/bad-batch-logo-1000_ef2d96b5.webp" alt="">
+                    </div>
+                    <i>Star Wars: The Bad Batch</i><p>, an all new animated series, to debut on Disney+ in 2021.</p>
+                    <button class="danger">READ MORE</button>
+                </div>
+                <div class="image-slide">
+                    <div class="image bg-blue"><img
+                            src="./assets/solo-disney-plus-new-swcom-slide-desktop-_2_9d5a26b3.webp" alt=""></div>
+                </div>
+                <div class="image-slide">
+                    <div class="image bg-red"><img src="./assets/star-wars-emmy-nominations-hero-desktop_3ec70094.webp"
+                            alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="labels">
+            <!-- <label for="slide1" class="label">text slide 1</label>
+            <label for="slide2" class="label">text slide 2</label>
+            <label for="slide3" class="label">text slide 3</label> -->
+
+            <!-- <div class="fake-radio">
+              <label for="slide1" class="radio-btn"></label>
+              <label for="slide2" class="radio-btn"></label>
+              <label for="slide3" class="radio-btn"></label>
+            </div> -->
+        </div>
+    </div>
+    <div id="mandopic">
+        <img src="./assets/the-mandalorian-generic-singlehero-desktop_00384234.webp" alt="">
+    </div>
 </body>
+
 </html>

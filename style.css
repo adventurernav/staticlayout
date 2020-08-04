@@ -1,6 +1,20 @@
 body{
     background-image: url("https://lumiere-a.akamaihd.net/v1/images/background-stars-desktop_81342104.jpeg?region=0%2C0%2C2048%2C1153");
-    height: 200vh;
+    /* height: 200vh; */
+    /* color: rgba(128, 128, 128, .5); */
+    color:darkgray;
+    font-weight: 200;
+    text-align: center;
+}
+i:hover{
+    color:white;
+}
+a:hover{
+    color:white;
+}
+a{
+    text-decoration: none;
+    color:darkgray;
 }
 .header-grid{
     display: grid;
@@ -12,6 +26,8 @@ body{
 }
 .grid-item-1{
     grid-column: 1 / 2;
+    font-size: 1.7em;
+    /* color: rgba(128, 128, 128, .5); */
 }
 .grid-item-2{
     grid-column: 2 / 3;
@@ -20,9 +36,232 @@ body{
 }
 .grid-item-3{
     grid-column: 3 / 4;
+    align-content: end;
+    text-align: end;
+}
+.grid-item-3 > input {
+    /* display: block; */
+    /* margin-right: 0; */
+    /* width: 10em; */
 }
 #logo{
-    height: 79%;
+    height: 75%;
     margin-top: 1rem;
-    /* padding-bottom: 0; */
 }
+.kids{
+    margin-top: 1rem;
+    border-radius: 9px;
+    height: 1rem;
+    background-color: gray;
+    background-repeat: no-repeat;
+    width: 2.6rem;
+    display: inline-block;
+    background-image: url("https://static-mh.content.disney.io/starwars/assets/shared/icon_kids-dc39fc54f6c2.svg");
+    color: white;
+    background-position: center;
+    background-size: 1.9rem .5rem;
+}
+.fab{
+    /* color: darkgray; */
+    margin: 1rem .1rem 0 .6rem;
+}
+.nav-grid{
+    /* background-color: gray; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+    /* column-gap: 1rem; */
+    border: .5px gray solid;
+}
+.nav-grid > * {
+    background-color: black;
+    border: 1px rgba(128, 128, 128, .4) solid;
+    border-bottom: none;
+    text-align: center;
+    padding: .75rem;
+}
+.image {
+    width: 100%;
+  }
+  .radio {
+    /*display: none;*/
+  }
+  .images {
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .images-inner {
+    width: 500%;
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  }
+  .image-slide {
+    width: 20%;
+    float: left;
+  }
+  .image-slide,
+  .fake-radio,
+  .radio-btn {
+    transition: all 0.5s ease-out;
+  }
+  .fake-radio {
+    float: right;
+  }
+  
+  
+  
+  
+  /* Move slides overflowed container */
+  #slide1:checked ~ .images .images-inner {
+    margin-left: 0;
+  }
+  #slide2:checked ~ .images .images-inner {
+    margin-left: -100%;
+  }
+  #slide3:checked ~ .images .images-inner {
+    margin-left: -200%;
+  }
+  
+  
+  
+  
+  /* Color of bullets */
+  #slide1:checked ~ div .fake-radio .radio-btn:nth-child(1),
+  #slide2:checked ~ div .fake-radio .radio-btn:nth-child(2),
+  #slide3:checked ~ div .fake-radio .radio-btn:nth-child(3) {
+    background: red;
+  }
+  .radio-btn {
+    width: 9px;
+    height: 9px;
+    border-radius: 5px;
+    background: gray;
+    display: inline-block !important;
+    margin: 0 1px;
+    cursor: pointer;
+  }
+  /* Color of bullets - END */
+  
+  
+  
+  
+  /* Text of slides */
+  #slide1:checked ~ .labels .label:nth-child(1),
+  #slide2:checked ~ .labels .label:nth-child(2),
+  #slide3:checked ~ .labels .label:nth-child(3) {
+    opacity: 1;
+  }
+  
+  .label {
+    opacity: 0;
+    position: absolute;
+  }
+  /* Text of slides - END */
+  
+  
+  
+  /* Calculate AUTOPLAY for BULLETS */
+  @keyframes bullet {
+    0%, 33.32333333333334%	{
+      background: red;
+    }
+    33.333333333333336%, 100% {
+      background: gray;
+    }
+  }
+  
+  
+  #play1:checked ~ div .fake-radio .radio-btn:nth-child(1) {
+    animation: bullet 12300ms infinite -1000ms;
+  }
+  
+  #play1:checked ~ div .fake-radio .radio-btn:nth-child(2) {
+    animation: bullet 12300ms infinite 3100ms;	
+  }
+  
+  #play1:checked ~ div .fake-radio .radio-btn:nth-child(3) {
+    animation: bullet 12300ms infinite 7200ms;	
+  }
+  /* Calculate AUTOPLAY for BULLETS - END */
+  
+  
+  
+  
+  /* Calculate AUTOPLAY for SLIDES */
+  @keyframes slide {
+    0%, 25.203252032520325%	{ margin-left: 0; }
+    33.333333333333336%, 58.53658536585366%	{ margin-left: -100%; }
+    66.66666666666667%, 91.869918699187%	{ margin-left: -200%; }
+  }
+  
+  
+  .st-slider > #play1:checked ~ .images .images-inner {
+    animation: slide 12300ms infinite;	
+  }
+  /* Calculate AUTOPLAY for SLIDES - END */
+
+  
+  /* Calculate AUTOPLAY for CAPTION */
+  @keyframes caption {
+    0%, 33.32333333333334%	{
+      opacity: 1;
+    }
+    33.333333333333336%, 100% {
+      opacity: 0;
+    }
+  }
+  
+  
+  #play1:checked ~ .labels .label:nth-child(1) {
+    animation: caption 12300ms infinite -1000ms;
+  }
+  
+  #play1:checked ~ .labels .label:nth-child(2) {
+    animation: caption 12300ms infinite 3100ms;	
+  }
+  
+  #play1:checked ~ .labels .label:nth-child(3) {
+    animation: caption 12300ms infinite 7200ms;	
+  }
+  /* Calculate AUTOPLAY for CAPTION - END */
+.image{
+    text-align: center;
+}
+  
+.cs_anchor{
+    display: none;
+}
+#search{
+    height: 2.5em;
+    width: 60%;
+    background-color: rgb(70, 70, 70);
+    margin-top: 1rem;
+    border-radius: .5rem;
+    margin-right: 0;
+}
+#search > input{
+    height:100%;
+    width: fit-content;
+    background-color: rgb(70, 70, 70);
+}
+#mandopic{
+    margin-top: 2rem;
+}
+#fixed{
+    position: fixed;
+    width: 98%;
+    /* margin-top: 0; */
+    top:0;
+}
+.danger{
+    background-color: red;
+    color:white;
+}
+#homepage-slider{
+    margin-top: 39vh;
+}
+
+
