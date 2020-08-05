@@ -16,13 +16,13 @@
     <div id="fixed">
         <div id="header" class="header-grid">
             <div class="grid-item-1">
-                <i class="fab fa-facebook fa-xs"></i>
-                <i class="fab fa-instagram fa-xs"></i>
-                <i class="fab fa-tumblr fa-xs"></i>
-                <i class="fab fa-twitter fa-xs"></i>
-                <i class="fab fa-youtube fa-xs"></i>
+                <a href="https://www.facebook.com/StarWars" target = blank><i class="fab fa-facebook fa-xs"></i></a>
+                <a href="https://www.instagram.com/starwars/" target = blank><i class="fab fa-instagram fa-xs"></i></a>
+                <a href="https://starwars.tumblr.com" target = blank><i class="fab fa-tumblr fa-xs"></i></a>
+                <a href="https://twitter.com/starwars" target = blank><i class="fab fa-twitter fa-xs"></i></a>
+                <a href="https://www.youtube.com/user/starwars" target = blank><i class="fab fa-youtube fa-xs"></i></a>
                 |
-                <i class="kids"></i>
+                <a href="https://lol.disney.com/star-wars" target="blank"><i class="kids"></i>
             </div>
             <div class="grid-item-2">
                 <img id="logo"
@@ -46,59 +46,86 @@
         </div>
         <div class="nav-grid">
             <span></span>
-            <span><a href="">NEWS + BLOG</a></span>
-            <span><a href="">VIDEO</a></span>
-            <span><a href="">FILMS</a></span>
-            <span><a href="">SERIES</a></span>
-            <span><a href="">INTERACTIVE</a></span>
-            <span><a href="">COMMUNITY</a></span>
-            <span><a href="">DATABANK</a></span>
+            <span><a href="https://www.starwars.com/news" target="_blank">NEWS + BLOG</a></span>
+            <span><a href="https://www.starwars.com/vclasseo target="_blank"">VIDEO</a></span>
+            <span><a href="https://www.starwars.com/films" target="_blank">FILMS</a></span>
+            <span><a href="https://www.starwars.com/series" target="_blank">SERIES</a></span>
+            <span><a href="https://www.starwars.com/interactive" target="_blank">INTERACTIVE</a></span>
+            <span><a href="https://www.starwars.com/community" target="_blank">COMMUNITY</a></span>
+            <span><a href="https://www.starwars.com/databank" target="_blank">DATABANK</a></span>
             <span></span>
         </div>
     </div>
-    <p><a class="streaming">STAR WARS STREAMING ANYTIME ON <i>DISNEY LOGO</i></a></p>
+    <div id="streaming-bar">
+        <a href="https://www.disneyplus.com/welcome/star-wars?cid=DTCI-Synergy-StarWars-Site-Aquisition-USLaunch-US-StarWars-Mandalorian-EN-NavPipe-StartStreamingNow-NA"> STAR WARS STREAMING ANYTIME ON <img src="https://lumiere-a.akamaihd.net/v1/images/d_grey_600f51ed.svg?region=0%2C0%2C150%2C82" height="30rem"></a>
+    </div>
     <!-- CAROUSEL -->
-    <div id="homepage-slider" class="st-slider">
-        
-
-        <input type="radio" class="cs_anchor radio" name="slider" id="slide1" />
-        <input type="radio" class="cs_anchor radio" name="slider" id="slide2" />
-        <input type="radio" class="cs_anchor radio" name="slider" id="slide3" />
-        <input type="radio" class="cs_anchor radio" name="slider" id="play1" checked="" />
-
-        <div class="images">
-            <div class="images-inner">
-                <div class="image-slide" id="bad-batch">
-                    <div class="image bg-yellow"><img src="./assets/bad-batch-logo-1000_ef2d96b5.webp" alt="">
-                    </div>
-                    <i>Star Wars: The Bad Batch</i><p>, an all new animated series, to debut on Disney+ in 2021.</p>
-                    <button class="danger">READ MORE</button>
+    <div id="carousel-container">
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li id="carousel__slide1"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper">
+                  <a href="#carousel__slide4"
+                     class="carousel__prev">Go to last slide</a>
+                  <a href="#carousel__slide2"
+                     class="carousel__next">Go to next slide</a>
                 </div>
-                <div class="image-slide">
-                    <div class="image bg-blue"><img
-                            src="./assets/solo-disney-plus-new-swcom-slide-desktop-_2_9d5a26b3.webp" alt=""></div>
-                </div>
-                <div class="image-slide">
-                    <div class="image bg-red"><img src="./assets/star-wars-emmy-nominations-hero-desktop_3ec70094.webp"
-                            alt=""></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="labels">
-            <!-- <label for="slide1" class="label">text slide 1</label>
-            <label for="slide2" class="label">text slide 2</label>
-            <label for="slide3" class="label">text slide 3</label> -->
-
-            <!-- <div class="fake-radio">
-              <label for="slide1" class="radio-btn"></label>
-              <label for="slide2" class="radio-btn"></label>
-              <label for="slide3" class="radio-btn"></label>
-            </div> -->
-        </div>
+              </li>
+              <li id="carousel__slide2"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide1"
+                   class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide3"
+                   class="carousel__next">Go to next slide</a>
+              </li>
+              <li id="carousel__slide3"
+                  tabindex="0"
+                  class="carousel__slide">
+                  <img src="./assets/bad-batch-logo.webp" alt="">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide2"
+                   class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide4"
+                   class="carousel__next">Go to next slide</a>
+              </li>
+              <li id="carousel__slide4"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide3"
+                   class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide1"
+                   class="carousel__next">Go to first slide</a>
+              </li>
+            </ol>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide1"
+                     class="carousel__navigation-button">Go to slide 1</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide2"
+                     class="carousel__navigation-button">Go to slide 2</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide3"
+                     class="carousel__navigation-button">Go to slide 3</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide4"
+                     class="carousel__navigation-button">Go to slide 4</a>
+                </li>
+              </ol>
+            </aside>
+          </section>
     </div>
     <div id="mandopic">
-        <img src="./assets/the-mandalorian-generic-singlehero-desktop_00384234.webp" alt="">
+        <img src="./assets/mando-logo.webp" alt="">
     </div>
 </body>
 
