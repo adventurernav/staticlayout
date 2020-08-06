@@ -1,4 +1,4 @@
-body{
+.container{
     background-image: url("https://lumiere-a.akamaihd.net/v1/images/background-stars-desktop_81342104.jpeg?region=0%2C0%2C2048%2C1153");
     /* height: 200vh; */
     /* color: rgba(128, 128, 128, .5); */
@@ -6,6 +6,7 @@ body{
     font-weight: 200;
     text-align: center;
     overflow-x: hidden;
+    overflow-y: initial;
 }
 
 .fab{
@@ -239,7 +240,7 @@ ol, li {
   
 }
 #carousel__slide1{
-  background-image: url(./assets/bartender-resized.jpg);
+  background-image: url(./assets/bartender-bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -248,7 +249,21 @@ ol, li {
   color: black;
 }
 #bartender-content {
-  margin-top: 500px;
+  color: white;
+  width: 30%;
+  font-size: 1.18rem;
+  margin-left: 8%;
+  font-weight: 500;
+}
+#bartender-logo-parent{
+  text-align: left;
+}
+#bartender-logo {
+  margin-top: 20%;
+  position: relative;
+  left:0;
+  width: 30%;
+
 }
 #carousel__slide2{
   background-image: url(./assets/emmy-nom.webp);
@@ -261,6 +276,8 @@ background-repeat: no-repeat;
 }
 #emmy-content{
 color: white;
+width: 30%;
+
 }
 #carousel__slide3{
   background-image: url(./assets/bad-batch-bg.webp);
@@ -281,10 +298,14 @@ color: white;
 }
 #bookclub-text {
   color: white;
+  width: 30%;
+  font-size: 1.18rem;
+  margin-left: 8%;
+  font-weight: 500;
 }
 #bookclub-logo {
   margin-top: 200px;
-  margin-left: 10%;
+  margin-left: 8%;
 }
 
 /* .carousel__slide:nth-child(even) {
@@ -412,7 +433,7 @@ color: white;
 /* END CAROUSEL */
 #mando-grid{
   display: grid;
-  grid-template-columns: 1vw 40vw 40vw 1vw;
+  grid-template-columns: 1vw 39vw 40vw 1vw;
   grid-template-rows: 28vh auto 100px 50px 150px;
   column-gap: 1vw;
   margin-top: 0;
@@ -502,4 +523,8 @@ color: white;
 }
 #mando-link-tech-link{
 
+}
+body{
+  margin: 2em;
+  background-color: black;
 }
