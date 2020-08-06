@@ -27,7 +27,7 @@
             <div class="grid-item-2">
                 <a href="https://www.starwars.com/"><img id="logo"
                   src="https://static-mh.content.disney.io/starwars/assets/navigation/sw_logo_stacked-336c62367939.png"
-                  alt=""></a>
+                  alt="" width="40%"></a>
             </div>
             <div class="grid-item-3">
                 <!-- <input type="image" src="./fontawesome-free-5.14.0-web/svgs/solid/search.svg" alt="Search"> -->
@@ -66,8 +66,10 @@
               <li id="carousel__slide1"
                   tabindex="0"
                   class="carousel__slide">
-                  <p>New Star Wars: Tales from the Galaxy's Edge story and cast details revealed!</p>
-                  <a href="https://www.starwars.com/news/new-star-wars-tales-from-the-galaxys-edge-story-and-cast-details-revealed">Read More</a>
+                  <div id="bartender-content">
+                    <p>New Star Wars: Tales from the Galaxy's Edge story and cast details revealed!</p>
+                    <a href="https://www.starwars.com/news/new-star-wars-tales-from-the-galaxys-edge-story-and-cast-details-revealed">Read More</a>
+                </div>
                 <div class="carousel__snapper">
                   <a href="#carousel__slide4"
                      class="carousel__prev">Go to last slide</a>
@@ -78,11 +80,12 @@
               <li id="carousel__slide2"
                   tabindex="0"
                   class="carousel__slide"> 
+                  <div id="emmy-content">
                   <p>THE MANDALORIAN NOMINATED FOR 15 EMMYS
                   <br>
                   The first Star Wars Live-action series has been recognized as a contender in a range of categories including Outstanding Drama Series, while Star Wars REsistance snagged a nomination for Outstanding Children's Program.</p>
                   <br> 
-                  <a href="https://www.starwars.com/news/the-mandalorian-emmys-2020">READ MORE</a>
+                  <a href="https://www.starwars.com/news/the-mandalorian-emmys-2020">READ MORE</a></div>
                 <div class="carousel__snapper"></div>
                 <a href="#carousel__slide1"
                    class="carousel__prev">Go to previous slide</a>
@@ -105,7 +108,9 @@
               <li id="carousel__slide4"
                   tabindex="0"
                   class="carousel__slide">
-                  <p>This week, Kristen Baver discusses StarWars: Thrawn by Timothy Zahn with panelists Frang Knight, Gabriela Lopez, and Nick Ghanbarian.</p>
+                  <div id="bookclub-logo"><img src="./assets/book-club-logo.webp" alt=""></div>
+                  <div id="bookclub-text">
+                  <p>This week, Kristen Baver discusses StarWars: Thrawn by Timothy Zahn with panelists Frang Knight, Gabriela Lopez, and Nick Ghanbarian.</p></div>
                 <div class="carousel__snapper"></div>
                 <a href="#carousel__slide3"
                    class="carousel__prev">Go to previous slide</a>
@@ -145,14 +150,16 @@
         <br> New episodes coming Fall 2020, only on Disney+.</h2>
       </div>
       <div id="mando-buttons">
-        <button id="button1">STREAM NOW</button>
-        <button id="button2">EXPLORE</button>
+        <button id="button1"> <a href="https://www.disneyplus.com/series/the-mandalorian/3jLIGMDYINqD?cid=DTCI-Synergy-StarWars-Site-Aquisition-USLaunch-US-StarWars-Mandalorian-Homepage-StartStreamingNow-NA" target="blank">STREAM NOW</a> </button>
+        <button id="button2"> <a href="https://www.starwars.com/series/the-mandalorian" target="_blank">EXPLORE</a> </button>
       </div>
-      <div id="mando-link-emmy">
-        <img src="https://adventurernav.github.io/staticlayout/assets/mando-links-emmy.webp" alt=""><a href="https://www.starwars.com/news/the-mandalorian-emmys-2020">The Mandalorian Nominated for 15 Emmy Awards</a>
+      <div id="mando-link-emmy-container">
+        <div id="mando-link-emmy-img"><img src="./assets/mando-links-emmy.webp" alt="" height="100px"></div>
+        <div id="mando-link-emmy-link"><a href="https://www.starwars.com/news/the-mandalorian-emmys-2020">The Mandalorian Nominated for 15 Emmy Awards</a></div>
       </div>
-      <div id="mando-link-tech">
-        <img src="https://adventurernav.github.io/staticlayout/assets/mando-links-tech.jpeg" alt=""><a href="https://www.starwars.com/news/the-mandalorian-stagecraft-feature">HOW INNOVATIVE TECHNOLOGY IMMERSED US IN THE WORLD OF THE MANDALORIAN</a>
+      <div id="mando-link-tech-container">
+        <div id="mando-link-tech-img"><img src="./assets/mando-links-tech.jpeg" alt="" height="100px"></div>
+        <div id="mando-link-tech-link"><a href="https://www.starwars.com/news/the-mandalorian-stagecraft-feature">HOW INNOVATIVE TECHNOLOGY IMMERSED US IN THE WORLD OF THE MANDALORIAN</a></div>
       </div>
     </div>
 </body>
